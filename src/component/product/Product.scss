@@ -1,0 +1,447 @@
+@import "src/style/break-points";
+
+.product {
+  width: 100%;
+  max-width: 1920px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__images1 {
+    @media screen and (max-width: $sm) {
+      width: 414px;
+      height: 760px;
+      padding: 0px 0px 103px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      margin-top: 80px;
+    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      @media screen and (max-width: $sm) {
+        width: 390px;
+        height: 62px;
+        font-family: "Abel", sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 61.17px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #222222;
+      }
+      font-family: Abel;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 66.27px;
+      letter-spacing: -0.02em;
+      &__img-container {
+        @media screen and (max-width: $sm) {
+          width: 100%;
+          top: 95.54px;
+          left: -88px;
+          gap: 0px;
+          opacity: 0px;
+        }
+
+        img {
+          width: 100%;
+          height: 506px;
+          object-fit: cover;
+          @media screen and (max-width: $sm) {
+            width: 100%;
+            height: 389px;
+          }
+        }
+      }
+    }
+
+    label {
+      width: 848px;
+
+      font-family: "Source Sans Pro", sans-serif;
+
+      text-align: center;
+
+      color: rgba(119, 119, 119, 1);
+
+      @media screen and (max-width: $sm) {
+        width: 390px;
+        height: 138px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 34px;
+        text-align: center;
+        color: #777777;
+      }
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 36px;
+      text-align: center;
+      width: 848px;
+    }
+  }
+  &__images2 {
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      height: 782px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+    display: flex;
+    width: 1413px;
+    height: 574px;
+    top: 41px;
+    left: -65px;
+    gap: 40px;
+    justify-content: center;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      width: 669px;
+      height: 430px;
+      padding: 80px 0px 0px 0px;
+
+      opacity: 0px;
+      @media screen and (max-width: $sm) {
+        width: 100%;
+        height: 394px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .see-more-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+       
+        min-height: 44px;
+        margin-top: 15px;
+        gap: 10px;
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(34, 34, 34, 1);
+        label {
+          width: 56px;
+          height: 19px;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 18.86px;
+          text-align: center;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          padding: 4.17px 0px 4.17px 0px;
+          gap: 0px;
+          opacity: 0px;
+        }
+      }
+      span {
+        width: 383px;
+        height: 44px;
+
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40.78px;
+        letter-spacing: -0.02em;
+      }
+      p {
+        width: 129px;
+        height: 30px;
+        font-family: "Source Sans Pro", sans-serif;
+
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30.17px;
+        text-align: left;
+
+        color: rgba(119, 119, 119, 1);
+      }
+    }
+    img {
+      @media screen and (max-width: $sm) {
+        width: 100%;
+        height: 435px;
+        top: -20px;
+        left: -20px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      width: 560px;
+      height: 560px;
+      top: -27px;
+      left: 36px;
+      gap: 0px;
+    }
+    label {
+      width: 533px;
+      height: 148px;
+
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 37px;
+      text-align: left;
+
+      @media screen and (max-width: $sm) {
+        width: 383px;
+        height: 185px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 37px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__images3 {
+    display: flex;
+    width: 1413px;
+    height: 530px;
+    gap: 40px;
+   padding: 0 10%;
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      height: 668px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      width: 669px;
+      height: 430px;
+      @media screen and (max-width: $sm) {
+        width: 100%;
+        height: 394px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .see-more-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        height: 44px;
+        margin-top: 15px;
+        gap: 10px;
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(34, 34, 34, 1);
+        label {
+          width: 56px;
+          height: 19px;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 18.86px;
+          text-align: center;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          padding: 4.17px 0px 4.17px 0px;
+          gap: 0px;
+          opacity: 0px;
+        }
+      }
+    }
+    img {
+      @media screen and (max-width: $sm) {
+        width: 100%;
+        top: -27px;
+        left: -20px;
+        gap: 0px;
+        opacity: 0px;
+      }
+      width: 509px;
+      height: 518px;
+    }
+    span {
+      font-family: "Abel", sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 40.78px;
+      letter-spacing: -0.02em;
+      text-align: left;
+    }
+    p {
+      width: 129px;
+      height: 30px;
+      font-family: "Source Sans Pro", sans-serif;
+
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 30.17px;
+      text-align: left;
+
+      color: rgba(119, 119, 119, 1);
+    }
+    h2 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 30.17px;
+      text-align: left;
+    }
+    label {
+      width: 406px;
+      height: 111px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 37px;
+      text-align: left;
+      color: rgba(34, 34, 34, 1);
+
+      @media screen and (max-width: $sm) {
+        width: 383px;
+        height: 111px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 37px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__images4 {
+    display: flex;
+    width: 1413px;
+    height: 512px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      height: 668px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__info {
+      width: Hug (669px) px;
+      height: Hug (430px) px;
+      padding: 80px 0px 0px 0px;
+      gap: 10px;
+      @media screen and (max-width: $sm) {
+        width: 100%;
+        height: 394px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .see-more-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        height: 44px;
+        margin-top: 15px;
+        gap: 10px;
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(34, 34, 34, 1);
+        label {
+          width: 56px;
+          height: 19px;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 18.86px;
+          text-align: center;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          padding: 4.17px 0px 4.17px 0px;
+          gap: 0px;
+          opacity: 0px;
+        }
+      }
+    }
+    img {
+      width: 616px;
+      height: 616px;
+      top: -57px;
+      left: 16px;
+      @media screen and (max-width: $sm) {
+        width: 440px;
+        height: 440px;
+        top: 31px;
+        left: -12px;
+        gap: 0px;
+        opacity: 0px;
+      }
+    }
+    span {
+      width: 669px;
+      height: 44px;
+      display: flex;
+      font-family: "Abel", sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 40.78px;
+      letter-spacing: -0.02em;
+      text-align: left;
+    }
+    p {
+      width: 184px;
+      color: rgba(119, 119, 119, 1);
+      height: 30px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 30.17px;
+      text-align: left;
+    }
+
+    label {
+      font-family: "Source Sans Pro", sans-serif;
+      width: 533px;
+      height: 74px;
+      font-family: Source Sans Pro;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 37px;
+      text-align: left;
+
+      @media screen and (max-width: $sm) {
+        width: 383px;
+        height: 74px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 37px;
+        text-align: center;
+      }
+    }
+  }
+}

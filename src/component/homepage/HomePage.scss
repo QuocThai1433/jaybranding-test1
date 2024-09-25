@@ -1,0 +1,114 @@
+@import "src/style/break-points";
+
+.home-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  height: auto;
+  top: 3px;
+  @media screen and (max-width: $sm) {
+    width: 414px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    @media screen and (max-width: $sm) {
+      width: 414px;
+      height: 92px;
+      padding: 3px 9px 3px 8px;
+      gap: 45px;
+      opacity: 0px;
+      display: flex;
+      align-items: center;
+    }
+    &__logo-container {
+      img {
+        width: 161px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        object-fit: contain;
+
+        @media screen and (max-width: $sm) {
+          width: 161px;
+          height: 52px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    &__menu-icon {
+      img {
+        display: none;
+      }
+      @media screen and (max-width: $sm) {
+        img {
+          display: flex;
+          width: 24px;
+        }
+      }
+    }
+  }
+
+  &__navbar-item {
+    display: flex;
+    width: 756px;
+    height: 21px;
+    gap: 40px;
+
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+
+    label {
+      position: relative;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20.11px;
+      letter-spacing: -0.02em;
+      text-align: center;
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% + 20px);
+        height: 4px;
+        background-color: rgba(34, 34, 34, 1);
+        display: none;
+      }  
+
+      &:hover {
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__language {
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+
+    display: flex;
+    gap: 10px;
+
+    &__filter-language {
+      width: 166px;
+      height: 24px;
+      gap: 24px;
+    }
+  }
+}
